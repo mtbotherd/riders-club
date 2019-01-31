@@ -1,0 +1,30 @@
+/*##############################
+    Font
+##############################*/
+/*##############################
+    Color scheme
+##############################*/
+/*##############################
+    Font sizes
+##############################*/
+.form-redesign .form-group select {
+  appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -khtml-appearance: none;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  padding: 0 24px 0 6px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjUwcHgiIGhlaWdodD0iMjUwcHgiIHZpZXdCb3g9Ii0zMiAtNjcgMjc1IDI3NSI+PHBhdGggZD0iTTE2OC40NTIsNDIuMTIxbC02LjEwOS02LjExMWMtMi4xMTgtMi4wMDktNC41OS0zLjAxNC03LjQxMy0zLjAxNGMtMi44OCwwLTUuMzI0LDEuMDA1LTcuMzM0LDMuMDE0TDEwOCw3NS42MDcgTDY4LjQwNCwzNi4wMTFjLTIuMDEtMi4wMDktNC40NTQtMy4wMTQtNy4zMzMtMy4wMTRjLTIuODI0LDAtNS4yOTYsMS4wMDUtNy40MTQsMy4wMTRsLTYuMDI5LDYuMTExIGMtMi4wNjQsMi4wNjMtMy4wOTYsNC41MzUtMy4wOTYsNy40MTRjMCwyLjkzMywxLjAzMyw1LjM3NywzLjA5Niw3LjMzMmw1My4wMzksNTMuMDM5YzEuOTU2LDIuMDY0LDQuMzk5LDMuMDk2LDcuMzMzLDMuMDk2IGMyLjg3OSwwLDUuMzUtMS4wMzIsNy40MTMtMy4wOTZsNTMuMDM5LTUzLjAzOWMyLjAxLTIuMDEsMy4wMTYtNC40NTQsMy4wMTYtNy4zMzJDMTcxLjQ2OCw0Ni43MTEsMTcwLjQ2Miw0NC4yNCwxNjguNDUyLDQyLjEyMXoiLz48L3N2Zz4=");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.form-redesign .form-group .input-group-addon {
+  background-color: #ffffff; }
+
+/* Ridematch specific form styles */
+
+/*# sourceMappingURL=../maps/forms.css.map */

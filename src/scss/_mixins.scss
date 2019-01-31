@@ -1,0 +1,77 @@
+/*############################################
+        Must have Mixins
+        http://w3bits.com/sass-mixins/
+############################################*/
+// Font size with fallback for old browsers
+@mixin font-size($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+// Vendor prefixing
+@mixin prefix($property, $value, $vendors: webkit moz ms o, $default: true) {
+    @if $vendors {
+        @each $vendor in $vendors {
+            #{"-" + $vendor + "-" + $property}: #{$value};
+        }
+    }
+    @if $default {
+        #{$property}: #{$value};
+    }
+}
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+// Center vertically
+@mixin center-v {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+}
+// Opacity
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity = $opacity-ie); //IE8
+}
+// Media queries
+@mixin screen($size) {
+    $lg-desktop: "(min-width: 1400px)";
+    $desktop: "(min-width: 992px)";
+    $lg-tablet: "(min-width: 768px) and (max-width: 991px)";
+    $max-tablet: "(max-width: 991px)";
+    $tablet: "(min-width: 768px)";
+    @if $size == tablet {
+        @media only screen and #{$tablet} {
+            @content;
+        }
+    } @else
+    if $size == max-tablet {
+        @media only screen and #{$max-tablet} {
+            @content;
+        }
+    } @else
+    if $size == lg-tablet {
+        @media only screen and #{$lg-tablet} {
+            @content;
+        }
+    } @else
+    if $size == desktop {
+        @media only screen and #{$desktop} {
+            @content;
+        }
+    } @else
+    if $size == lg-desktop {
+        @media only screen and #{$lg-desktop} {
+            @content;
+        }
+    } @else {
+        @media only screen and #{$size} {
+            @content;
+        }
+    }
+}

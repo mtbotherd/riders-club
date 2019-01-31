@@ -1,0 +1,16 @@
+/*** Backgrounds ***/
+// White bg on mobile, map bg on desktop.
+
+.landing-bg {
+  background-image: none;
+  height: 100%;
+  @include screen("desktop") {
+    background-image: url("/Data/sites/1/media/riders-club/riders_club_outside.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 60px 0;
+    top: 0;
+  }
+}
