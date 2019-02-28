@@ -1,5 +1,6 @@
 /*############################################
-        Rider's Club
+        Must have Mixins
+        http://w3bits.com/sass-mixins/
 ############################################*/
 /*** Backgrounds ***/
 .landing-bg {
@@ -40,10 +41,6 @@
     background-color: #ebebeb; }
   .riders-club small {
     font-size: 8px; }
-  .riders-club .card {
-    background-color: #ffffff;
-    border: 1px solid #c0c0c0;
-    padding: 15px; }
   .riders-club .navigation {
     background-color: #ffffff; }
     .riders-club .navigation i {
@@ -72,6 +69,10 @@
   .riders-club a.active i.material-icons {
     color: #0053a0; }
   @media only screen and (min-width: 992px) {
+    .riders-club .card {
+      background-color: #ffffff;
+      border: 1px solid #c0c0c0;
+      padding: 15px; }
     .riders-club h1 {
       font-size: 30px; }
     .riders-club h2 {
@@ -95,29 +96,24 @@
 /*##############################
   Riders Club intro page styles
 ##############################*/
-.riders-club .intro {
-  margin-bottom: 30px; }
-  .riders-club .intro h1 {
-    color: #ffffff;
-    padding-top: 30px;
-    margin-bottom: 5px; }
-  .riders-club .intro p.lead {
-    font-size: 18px;
-    color: #ffffff;
-    margin-top: 0; }
+.riders-club .intro .logo {
+  padding: 15px 0 !important; }
 
-.riders-club .card {
-  border: 0;
-  padding: 15px;
-  opacity: 0.9;
-  float: left;
-  margin: 0 auto; }
-  .riders-club .card h2 {
-    font-size: 14px; }
-  .riders-club .card p {
-    margin-top: 0; }
-  .riders-club .card .leadin {
-    font-weight: 100; }
+.riders-club .intro h1 {
+  margin-bottom: 5px;
+  text-align: center; }
+
+.riders-club .intro p.lead {
+  font-size: 18px;
+  margin-top: 0;
+  text-align: center; }
+
+.riders-club .card h2 {
+  font-size: 14px; }
+
+.riders-club .card .leadin {
+  font-weight: 100;
+  text-align: center; }
 
 .riders-club .fancy-button {
   display: block;
@@ -143,6 +139,17 @@
   background-color: #0053a0; }
 
 @media only screen and (min-width: 992px) {
+  .riders-club .intro {
+    margin-bottom: 30px; }
+    .riders-club .intro .logo {
+      padding: 0 !important; }
+    .riders-club .intro h1 {
+      color: #ffffff;
+      padding-top: 30px;
+      text-align: left; }
+    .riders-club .intro p.lead {
+      color: #ffffff;
+      text-align: left; }
   .riders-club .card {
     border: 1px solid #d6d6d6; } }
 

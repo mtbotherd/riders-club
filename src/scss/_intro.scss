@@ -3,37 +3,32 @@
 ##############################*/
 .riders-club {
   .intro {
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
+
+    .logo {
+        padding: 15px 0 !important;
+    }
 
     h1 {
-      color: $white;
-      padding-top: 30px;
       margin-bottom: 5px;
+      text-align: center;
     }
 
     p.lead {
       font-size: 18px;
-      color: $white;
       margin-top: 0;
+      text-align: center;
     }
   }
   .card {
-    border: 0;
-    padding: 15px;
-    opacity: 0.9;
-    float: left;
-    margin: 0 auto;
 
     h2 {
       font-size: 14px;
     }
 
-    p {
-      margin-top: 0;
-    }
-
     .leadin {
       font-weight: 100;
+      text-align: center;
     }
   }
   .fancy-button {
@@ -64,6 +59,25 @@
     background-color: #0053a0;
   }
   @include screen("desktop") {
+    .intro {
+        margin-bottom: 30px;
+
+        .logo {
+            padding: 0 !important;
+        }
+
+        h1 {
+            color: $white;
+            padding-top: 30px;
+            text-align: left;
+        }
+
+        p.lead {
+            color: $white;
+            text-align: left;
+        }
+    }
+    
     .card {
       border: 1px solid $border-color;
     }

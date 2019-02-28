@@ -46,12 +46,6 @@
     font-size: 8px;
   }
 
-  .card {
-    background-color: $white;
-    border: 1px solid $grey;
-    padding: 15px;
-  }
-
   .navigation {
     background-color: $white;
 
@@ -98,6 +92,11 @@
   }
   // Media queries
   @include screen("desktop") {
+    .card {
+        background-color: $white;
+        border: 1px solid $grey;
+        padding: 15px;
+      }
     h1 {
       font-size: 30px;
     }
